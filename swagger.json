@@ -160,7 +160,7 @@
                 },
                 "sell_currency" : {
                   "type" : "string",
-                  "description" : "hola"
+                  "description" : "descripcion"
                 },
                 "trade_type" : {
                   "type" : "string",
