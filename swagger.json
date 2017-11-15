@@ -159,7 +159,8 @@
                   "description" : "Operation (buy or sell)"
                 },
                 "sell_currency" : {
-                  "type" : "string"
+                  "type" : "string",
+                  "description" : "hola"
                 },
                 "trade_type" : {
                   "type" : "string",
