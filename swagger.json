@@ -138,12 +138,14 @@
       "required" : [ "data" ],
       "properties" : {
         "data" : {
+          "required" : [ "attributes", "type" ],
           "type" : "object",
           "properties" : {
             "type" : {
               "type" : "string"
             },
             "attributes" : {
+              "required" : [ "amount", "buy_currency", "operation", "sell_currency", "trade_type" ],
               "type" : "object",
               "properties" : {
                 "amount" : {
@@ -164,11 +166,9 @@
                   "description" : "The trade type (currently only spot supported)",
                   "default" : "spot"
                 }
-              },
-              "required" : [ "amount", "buy_currency", "operation", "sell_currency", "trade_type" ]
+              }
             }
-          },
-          "required" : [ "attributes", "type" ]
+          }
         }
       }
     },
@@ -177,6 +177,7 @@
       "required" : [ "data" ],
       "properties" : {
         "data" : {
+          "required" : [ "id", "type" ],
           "type" : "object",
           "properties" : {
             "id" : {
@@ -223,8 +224,7 @@
                 }
               }
             }
-          },
-          "required" : [ "id", "type" ]
+          }
         }
       }
     },
